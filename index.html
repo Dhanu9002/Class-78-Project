@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            My Family Book
+        </title>
+    </head>
+
+    <body>
+
+        <h1>My Family Book</h1>
+        <img id="img1"  src="thefamilybkimg.jpg">
+        <h5 id="one"> Our family Book </h5>
+
+        <br>
+        <br>
+
+        <button type=button onclick="family()">Next</button>
+
+        <script>
+
+            var names=["1.Father - Prasanna","2.Mother - Revathi","3.Sister - Priyankaa","4.Grandparents - Veeraraghavan & Saraswathi"];
+
+            var Img=["father.png","mom.jpg","sister.jpg","grandparents.jpg"];
+            
+            var i=0;
+            function family(){
+                document.getElementById("one").innerHTML=names[i];
+                document.getElementById("img1").src=Img[i];
+                i++;
+                if(i==4){
+                    i=0
+                }}
+
+
+        </script>
+
+    </body>
+
+</html>
